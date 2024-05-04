@@ -47,7 +47,7 @@ a {
   height: 50%;
   margin: 0;
   padding: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #home {
@@ -56,6 +56,7 @@ a {
 
 #quake {
   background-color: rgb(0, 235, 196);
+  height: 500px;
 }
 
 h1{
@@ -66,22 +67,23 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#heading {
+  color: white;
+}
+
 p {
   position: relative;
   color: black;
-  top: 0;
+  top: 0px;
   font-size: 12pt;
 }
 
-.block {
-  background-color: rgb(15, 15, 15);
-  width: 86%;
-  height: 200px;
-  padding: 10px;
-  border-radius: 5px;
+.codeblock {
+width: 85%;
+height: fit-content;
 }
 
-.codeblock {
-color: rgb(0, 235, 196);
-white-space: initial;
+#list {
+  background-color: rgb(15, 15, 15);
+  height: 1500px;
 }
