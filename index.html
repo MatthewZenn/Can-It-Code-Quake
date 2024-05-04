@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CanItCodeQuake</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <img src="Assets/logo.png" alt="logo">
+      <a href="#home">Home</a>
+      <a href="#quake">Quake3</a>
+      <a href="#lists">List</a>
+    </header>
+    <div class="sections">
+      <div id="home" class="section">
+        <img src="Assets/logo.png" alt="">
+        <h1>Can we code the Fast-inverse Root algorithm in every langauge?</h1>
+        <p>The goal of this project is to find an implementation of Quake 3's algorithm for as many languages as possible. The only requirement is that an implementation follow the same process and does not use any functions that weren't possible at the time, such as division.</p>
+      </div>
+      <div id="quake" class="section">
+        <h1>The Algorithm</h1>
+        <div class="block">
+          <pre class="codeblock">
+            <code>
+              float Q_rsqrt(float number)
+              {
+                long i;
+                float x2, y;
+                const float threehalfs = 1.5F;
+    
+                x2 = number * 0.5F;
+                y  = number;
+                i  = * ( long * ) &y;                       // evil floating point bit level hacking
+                i  = 0x5f3759df - ( i >> 1 );               // what the heck?
+                y  = * ( float * ) &i;
+                y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+                // y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+    
+                return y;
+              }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>
