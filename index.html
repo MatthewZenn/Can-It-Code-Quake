@@ -11,14 +11,14 @@
   </head>
   <body>
     <header>
-      <img src="Assets/logo.png" alt="logo" id="logo">
+      <img src="Assets/logo2.png" alt="logo" id="logo">
       <a href="#home">Home</a>
       <a href="#quake">Quake3</a>
       <a href="#list">List</a>
     </header>
     <div class="sections">
       <div id="home" class="section">
-        <h1>Can we code the Fast-inverse Root algorithm in every langauge?</h1>
+        <h1>Can we code the Fast Inverse Root algorithm in every langauge?</h1>
         <p>The goal of this project is to find an implementation of Quake 3's algorithm for as many languages as possible. The only requirement is that an implementation follow the same process and does not use any functions that weren't possible at the time, such as division. Code should also be commented.</p>
       </div>
       <div id="quake" class="section">
@@ -33,11 +33,11 @@
     
               x2 = number * 0.5F;
               y  = number;
-              i  = * ( long * ) &y;                       // evil floating point bit level hacking
-              i  = 0x5f3759df - ( i >> 1 );               // what da heck?
+              i  = * ( long * ) &y; // evil floating point bit level hacking
+              i  = 0x5f3759df - ( i >> 1 ); // what da heck?
               y  = * ( float * ) &i;
-              y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
-              // y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+              y  = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
+              // y  = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, this can be removed
     
               return y;
             }
@@ -46,7 +46,7 @@
         <p id="history">The algorithm</p>
       </div>
       <div id="list" class="section">
-        <h1 id="heading">C</h1>
+        <h1 id="heading">C/C++</h1>
         <pre class="codeblock">
           <code class="lang-c">
             float Q_rsqrt(float number)
