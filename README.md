@@ -6,5 +6,6 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 
 **Languages so far**
 - C/C++
+- Fortran
 - GDScript
 - Rust

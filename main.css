@@ -98,5 +98,6 @@ border-radius: 5px;
 
 #list {
   background-color: rgb(15, 15, 15);
-  height: 1500px;
+  height: auto;
+  padding-bottom: 50px;
 }
