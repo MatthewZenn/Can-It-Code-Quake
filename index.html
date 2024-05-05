@@ -11,19 +11,18 @@
   </head>
   <body>
     <header>
-      <img src="Assets/logo.png" alt="logo">
+      <img src="Assets/logo.png" alt="logo" id="logo">
       <a href="#home">Home</a>
       <a href="#quake">Quake3</a>
       <a href="#list">List</a>
     </header>
     <div class="sections">
       <div id="home" class="section">
-        <img src="Assets/logo.png" alt="">
         <h1>Can we code the Fast-inverse Root algorithm in every langauge?</h1>
         <p>The goal of this project is to find an implementation of Quake 3's algorithm for as many languages as possible. The only requirement is that an implementation follow the same process and does not use any functions that weren't possible at the time, such as division. Code should also be commented.</p>
       </div>
       <div id="quake" class="section">
-        <h1>The Algorithm</h1>
+        <h1 id="heading">The Algorithm</h1>
         <pre class="codeblock">
           <code class="lang-c">
             float Q_rsqrt(float number)
@@ -44,8 +43,7 @@
             }
           </code>
         </pre>
-        <br>
-        <p>The algorithm</p>
+        <p id="history">The algorithm</p>
       </div>
       <div id="list" class="section">
         <h1 id="heading">C</h1>
@@ -59,11 +57,10 @@
     
               x2 = number * 0.5F;
               y  = number;
-              i  = * ( long * ) &y;                       // evil floating point bit level hacking
-              i  = 0x5f3759df - ( i >> 1 );               // what the heck?
+              i  = * ( long * ) &y;
+              i  = 0x5f3759df - ( i >> 1 );
               y  = * ( float * ) &i;
-              y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
-              // y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+              y  = y * ( threehalfs - ( x2 * y * y ) );
     
               return y;
             }
@@ -74,21 +71,24 @@
         <pre class="codeblock">
           <code class="lang-gdscript">
             func Q_rsqrt(number: float):
-            var x: float
-            var y = number
-            var i
-            
-            x = number * 0.5
-            i = str(y - int(y)) # seperates decimcal value from float and converts to string
-            y = int(number * (pow(10, i.length()-2))) # converts float to 64-bit integer using notation
-            y = 0x5f3759df - (y >> 1)
-            y = float(y * (pow(10, -i.length()-2))) # theoretically undos line 14
-            
-            y = y * (1.5 - (x * y * y)) # 1st iteration
-            y = y * (1.5 - (x * y * y)) # 2nd iteration
-            y = y * (1.5 - (x * y * y)) # 3rd iteration
-            
-            return y
+              var x: float
+              var y:float = number
+              var i: int
+              var b: PackedByteArray = PackedByteArray()
+
+              x = number * 0.5
+              b.resize(8)
+              b.encode_float(0, y)
+              i = b.decode_s64(0)
+              i = 0x5f3759df - (i >> 1)
+              b.encode_s64(0, i)
+              y = b.decode_float(0)
+
+              y = y * (1.5 - (x * y * y)) # 1st iteration
+              y = y * (1.5 - (x * y * y)) # 2nd iteration
+              y = y * (1.5 - (x * y * y)) # 3rd iteration
+
+              return y
           </code>
         </pre>
         <br>

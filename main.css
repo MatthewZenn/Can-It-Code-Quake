@@ -12,13 +12,21 @@ header {
   background-color: rgb(25, 25, 25);
   display: inline-block;
   align-items: baseline;
-  border-bottom: 2px solid rgb(0, 235, 196);
+  border-bottom: 2px solid rgb(212, 79, 134);
+}
+
+#logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px;
 }
 
 a {
   position: relative;
   display: inline;
   top: 20px;
+  left: 70px;
   font-size: 14pt;
   text-decoration: none;
   color: white;
@@ -33,7 +41,7 @@ a {
   height: 100%;
   display: block;
   margin: 0 auto;
-  background-color: rgb(0, 235, 196);
+  background-color: rgb(15, 15, 15);
   z-index: 0;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -51,12 +59,12 @@ a {
 }
 
 #home {
-  background-color: rgb(255, 230, 86);
+  background-color: #FFDC00;
 }
 
 #quake {
-  background-color: rgb(0, 235, 196);
-  height: 500px;
+  background-color: rgb(212, 79, 134);
+  height: 550px;
 }
 
 h1{
@@ -78,9 +86,14 @@ p {
   font-size: 12pt;
 }
 
+#history {
+  color: white;
+}
+
 .codeblock {
 width: 85%;
 height: fit-content;
+border-radius: 5px;
 }
 
 #list {
