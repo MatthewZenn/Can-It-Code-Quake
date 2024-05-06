@@ -4,7 +4,7 @@ A Project to code the Quake 3 algorithm in every langauge.
 
 <https://matthewzenn.github.io/Can-It-Code-Quake/>
 
-Let's find out how many languages can implement the Fast Inverse Square Root Algorithm. If you want to contribute, open a PR, adding your implementation to the ```Quakers``` folder. Please do not edit the site code at this time.
+Let's find out how many languages can implement the Fast Inverse Square Root Algorithm. If you want to contribute, open a PR, adding your implementation to the ```Quakers``` folder and using the ```implementation``` tag. Please do not edit the site code at this time.
 
 **Languages so far:**
 - C/C++
