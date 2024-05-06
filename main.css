@@ -34,9 +34,16 @@ footer {
   left: 0;
 }
 
+.footlink:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .footp {
   color: grey;
   font-size: 10pt;
+  top: 10px;
+  left: 0;
 }
 
 #logo {
