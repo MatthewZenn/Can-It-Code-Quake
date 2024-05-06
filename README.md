@@ -4,8 +4,9 @@ A Project to code the Quake 3 algorithm in every langauge.
 
 Let's find out how many languages can implement the Fast Inverse Square Root Algorithm.
 
-**Languages so far**
+**Languages so far:**
 - C/C++
 - Fortran
 - GDScript
+- JavaScript
 - Rust

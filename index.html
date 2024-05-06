@@ -6,12 +6,13 @@
     <title>CanItCodeQuake</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/d15157182d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="prism.css">
   </head>
   <body>
     <header>
-      <img src="Assets/logo2.png" alt="logo" id="logo">
+      <img src="Assets/logo.png" alt="logo" id="logo">
       <a href="#home">Home</a>
       <a href="#quake">Quake3</a>
       <a href="#list">List</a>
@@ -19,7 +20,7 @@
     <div class="sections">
       <div id="home" class="section">
         <h1>Can we code the Fast Inverse Root algorithm in every langauge?</h1>
-        <p>The goal of this project is to find an implementation of Quake 3's algorithm for as many languages as possible. The only requirement is that an implementation follow the same process and does not use any functions that weren't possible at the time, such as division. Code should also be commented.</p>
+        <p>The goal of this project is to find an implementation of Quake 3's algorithm for as many languages as possible. The only requirement is that an implementation follow the same process and does not use any functions that weren't possible at the time, such as division. Code should include a line to invoke the function.</p>
       </div>
       <div id="quake" class="section">
         <h1 id="heading">The Algorithm</h1>
@@ -63,6 +64,11 @@
               y  = y * ( threehalfs - ( x2 * y * y ) );
     
               return y;
+            }
+
+            int main() {
+              printf(Q_rsqrt(2.43));
+              //cout << Q_rsqrt(2.43); if in c++
             }
           </code>
         </pre>
@@ -112,11 +118,40 @@
               b.encode_s64(0, i)
               y = b.decode_float(0)
 
-              y = y * (1.5 - (x * y * y)) # 1st iteration
-              y = y * (1.5 - (x * y * y)) # 2nd iteration
-              y = y * (1.5 - (x * y * y)) # 3rd iteration
+              y = y * (1.5 - (x * y * y))
+              y = y * (1.5 - (x * y * y))
+              y = y * (1.5 - (x * y * y))
 
               return y
+
+            console.log(Q_rsqrt(0.15625))
+          </code>
+        </pre>
+        <br>
+        <h1 id="heading">JavaScript</h1>
+        <pre class="codeblock">
+          <code class="lang-js">
+            function Q_rsqrt(number) {
+              var x2, y;
+              var i;
+              var b = new BigInt64Array(8);
+              var c = new Float32Array(4);
+            
+              x2 = number * 0.5;
+              y = number;
+              b[0] = y;
+              i = b;
+              i = 0x5f3759df - (i >> 1);
+              c[0] = i;
+              y = c;
+            
+              y = y*(1.5 - (x2 * y * y));
+              y = y*(1.5 - (x2 * y * y));
+            
+              return y;
+            }
+            
+            console.log(Q_rsqrt(3.14));
           </code>
         </pre>
         <br>
@@ -132,11 +167,20 @@
           
               x * (1.5 - xhalf * x * x)
           }
+
+          fn main() {
+            println!("{}", inv_sqrt(3.14));
+          }
           </code>
         </pre>
         <br>
       </div>
     </div>
+    <footer>
+      <a class="footlink" href="https://github.com/MatthewZenn/Can-It-Code-Quake"><i class="fab fa-github"></i></a>
+      <a class="footlink" href="https://youtube.com/zennmagic"><i class="fab fa-youtube"></i></a>
+      <a class="footlink footp">Matthew Zenn: 2024</a>
+    </footer>
     <script src="main.js" async defer></script>
     <script src="prism.js"></script>
   </body>
