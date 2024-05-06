@@ -1,16 +1,12 @@
 function Q_rsqrt(number) {
   var x2, y;
   var i;
-  var b = new BigInt64Array(8);
-  var c = new Float32Array(4);
 
   x2 = number * 0.5;
   y = number;
-  b[0] = y;
-  i = b;
+  i = new Int32Array(new Float32Array([y]).buffer)[0];;
   i = 0x5f3759df - (i >> 1);
-  c[0] = i;
-  y = c;
+  y = new Float32Array(new Int32Array([i]).buffer)[0];;
 
   y = y*(1.5 - (x2 * y * y));
   y = y*(1.5 - (x2 * y * y));
@@ -18,4 +14,4 @@ function Q_rsqrt(number) {
   return y;
 }
 
-console.log(Q_rsqrt(3.14));
+console.log(Q_rsqrt(0.15265));
