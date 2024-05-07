@@ -9,6 +9,7 @@ fn Q_sqrt(number: f32) f32 {
     var b: *f32 = &i;
 
     b = b * (1.5 - (x2 * b * b));
+    b = b * (1.5 - (x2 * b * b));
 
     return b;
 }
