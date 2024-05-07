@@ -73,6 +73,34 @@
           </code>
         </pre>
         <br>
+        <h1 id="heading">Dart</h1>
+        <pre class="codeblock">
+          <code class="lang-dart">
+            import 'dart:typed_data';
+
+            double Q_rsqrt(double number) {
+              final threehalfs = 1.5;
+              final x2 = number * 0.5;
+              var y = number;
+            
+              var i = Float32List(1);
+              i.buffer.asFloat32List()[0] = y;
+              var intValue = i.buffer.asUint32List()[0];
+              intValue = 0x5f3759df - (intValue >> 1);
+              i.buffer.asUint32List()[0] = intValue;
+              y = i.buffer.asFloat32List()[0];
+              y = y * (threehalfs - (x2 * y * y)); // first iteration
+              // y = y * (threehalfs - (x2 * y * y)); // increased precision
+            
+              return y;
+            }
+            
+            void main() {
+              print(Q_rsqrt(23.4));
+            }
+          </code>
+        </pre>
+        <br>
         <h1 id="heading">Fortran</h1>
         <pre class="codeblock">
           <code class="lang-fortran">
@@ -148,6 +176,28 @@
             }
             
             console.log(Q_rsqrt(25));
+          </code>
+        </pre>
+        <br>
+        <h1 id="heading">Python</h1>
+        <pre class="codeblock">
+          <code class="lang-python">
+            import struct
+
+            def Q_rsqrt(number):
+                threehalfs = 1.5
+                x2 = number * 0.5
+                y = number
+                
+                i = struct.unpack('I', struct.pack('f', y))[0]
+                i = 0x5f3759df - (i >> 1)
+                y = struct.unpack('f', struct.pack('I', i))[0]
+                y = y * (threehalfs - (x2 * y * y)) # first iteration
+                # y = y * (threehalfs - (x2 * y * y)) # increased precision
+                
+                return y
+            
+            print(Q_rsqrt(123.456))
           </code>
         </pre>
         <br>
