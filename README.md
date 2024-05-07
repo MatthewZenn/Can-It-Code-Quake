@@ -25,7 +25,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - Python
 - Rust
 - Zig
-- Vlang
+- Vlang (probably)
 
 ## About the Algorithm
 ```c 
