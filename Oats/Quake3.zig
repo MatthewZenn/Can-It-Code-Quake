@@ -1,11 +1,18 @@
 const std = @import("std");
 
-var number: f32 = 0.15625;
+fn Q_sqrt(number: f32) f32 {
+    var y: f32 = number;
+    const x2: f32 = number * 0.5;
 
-var x: i64 = 0;
-var y: f32 = 0.0;
-var x2: i32 = number;
+    var i: *i64 = &y;
+    i = 0x5f3759df - (i >> 1);
+    var b: *f32 = &i;
+
+    b = b * (1.5 - (x2 * b * b));
+
+    return b;
+}
 
 pub fn main() void {
-    std.debug.print("Hello world", .{});
+    std.debug.print(Q_sqrt(0.15625), .{});
 }
