@@ -7,7 +7,7 @@ A Project to code the Quake 3 algorithm in every language.
 Let's find out how many languages can implement the Fast Inverse Square Root Algorithm. 
 
 ## If you would like to contribute:
- 1. Fork the repository
+ 1. Fork the repository.
  2. Add your implementation to the ```Oats``` folder.
  3. Use the ```implementation``` tag in your PR.
  

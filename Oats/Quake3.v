@@ -1,16 +1,16 @@
-fn q_rsqrt(number f32) {
-	i i64
-	x2 f32
-	y f32
+fn q_rsqrt(number f32) f32 {
+	mut long := i64
+	mut x := f32
+	mut y := f32
 	
-	x2: number * 0.5
-	y: number
-	i: &y
-	i: 0x5f3759df - (i >> 1)
-	y: &i
+	x = number * 0.5
+	y = number
+	long = &y
+	long = 0x5f3759df - (long >> 1)
+	y = &long
 	
-	y: y * (1.5 - (x2 * y * y))
-	y: y * (1.5 - (x2 * y * y))
+	y = y * (1.5 - (x * y * y))
+	y = y * (1.5 - (x * y * y))
 	
 	return y
 }
