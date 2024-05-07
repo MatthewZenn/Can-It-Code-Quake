@@ -1,6 +1,6 @@
 ![logo.png](Assets/logo.png)
 # Can-It-Code-Quake
-A Project to code the Quake 3 algorithm in every langauge.
+A Project to code the Quake 3 algorithm in every language.
 
 <https://matthewzenn.github.io/Can-It-Code-Quake/>
 
@@ -8,6 +8,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 
 **Languages so far:**
 - C/C++
+- C#
 - Fortran
 - GDScript
 - JavaScript
