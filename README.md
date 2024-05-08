@@ -23,9 +23,9 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - GDScript
 - JavaScript
 - Python
+- Swift
 - Rust
 - Zig
-- Vlang (probably)
 
 ## About the Algorithm
 ```c 
