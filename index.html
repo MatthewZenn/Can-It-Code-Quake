@@ -48,6 +48,13 @@
         <p id="history">The algorithm</p>
       </div>
       <div id="list" class="section">
+        <h1 id="heading"><i class="devicon-bash-plain"></i> Bash</h1>
+        <pre class="codeblock">
+          <code class="lang-bash">
+            #!/bin/bash
+          </code>
+        </pre>
+        <br>
         <h1 id="heading"><i class="devicon-c-line colored"></i> C/C++</h1>
         <pre class="codeblock">
           <code class="lang-c">
@@ -228,6 +235,13 @@
           </code>
         </pre>
         <br>
+        <h1 id="heading"><i class="devicon-nim-plain colored"></i> Nim</h1>
+        <pre class="codeblock">
+          <code class="lang-nim">
+
+          </code>
+        </pre>
+        <br>
         <h1 id="heading"><i class="devicon-python-plain colored"></i> Python</h1>
         <pre class="codeblock">
           <code class="lang-python">
@@ -266,6 +280,45 @@
           fn main() {
             println!("{}", inv_sqrt(3.14));
           }
+          </code>
+        </pre>
+        <br>
+        <h1 id="heading"><i class="devicon-swift-plain colored"></i> Swift</h1>
+        <pre class="codeblock">
+          <code class="lang-swift">
+            import Foundation
+
+            func Q_rsqrt(number: Float32) -> Float32 {
+              var i: UInt32
+              let x2 = number * 0.5
+              var y = number
+            
+              i = UInt32(y.bitPattern)
+              i = 0x5f3759df - (i >> 1)
+              y = Float32(bitPattern: UInt32(i))
+            
+              y = y*(1.5 - (x2 * y * y))
+              y = y*(1.5 - (x2 * y * y))
+              y = y*(1.5 - (x2 * y * y))
+            
+              return y
+            }
+            
+            print(Q_rsqrt(number: 0.15625))
+          </code>
+        </pre>
+        <br>
+        <h1 id="heading"><i class="devicon-visualstudio-plain colored"></i> VbScript</h1>
+        <pre class="codeblock">
+          <code class="lang-vb">
+
+          </code>
+        </pre>
+        <br>
+        <h1 id="heading"><i class="devicon-vitess-plain colored"></i> Vlang</h1>
+        <pre class="codeblock">
+          <code class="lang-vlang">
+
           </code>
         </pre>
         <br>

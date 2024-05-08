@@ -5,11 +5,11 @@ proc q_rsqrt(number: float32): float32 =
   y = number
   x2 = number * 0.5
   i : pointer = addr(y)
-  i = 0x5f3759df - (i >> 1);
+  i = 0x5f3759df - (i >> 1)
   y : pointer = addr(i)
 
-  y = y*(1.5 - (x2 * y * y));
-  y = y*(1.5 - (x2 * y * y));
+  y = y*(1.5 - (x2 * y * y))
+  y = y*(1.5 - (x2 * y * y))
 
   return y
 
