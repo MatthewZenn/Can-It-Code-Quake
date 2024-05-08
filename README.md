@@ -22,7 +22,9 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - [x] Fortran
 - [x] Go
 - [x] GDScript
+- [ ] Java
 - [x] JavaScript
+- [ ] Kotlin
 - [ ] Minecraft (probably not possible)
 - [ ] Nim
 - [x] Python
