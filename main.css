@@ -28,9 +28,9 @@ footer {
 }
 
 .footlink {
-  color: grey;
-  font-size: 18pt;
-  top: 10px;
+  color: white;
+  font-size: 24pt;
+  top: 5px;
   left: 0;
 }
 
@@ -44,11 +44,11 @@ footer {
   font-size: 10pt;
   top: 0px;
   left: 0;
-  text-align: right;
 }
 
 .footp a {
   text-decoration: underline;
+  color: #FFDC00;
 }
 
 #logo {
