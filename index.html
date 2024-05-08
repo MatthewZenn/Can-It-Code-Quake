@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="prism.css">
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -50,338 +50,120 @@
       <div id="list" class="section">
         <h1 id="heading"><i class="devicon-bash-plain"></i> Bash</h1>
         <pre class="codeblock">
-          <code class="lang-py" id="test">
-            #!/bin/bash
+          <code class="lang-bash" id="bash">
+
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-c-line colored"></i> C/C++</h1>
         <pre class="codeblock">
-          <code class="lang-c">
-            float Q_rsqrt(float number)
-            {
-              long i;
-              float x2, y;
-              const float threehalfs = 1.5F;
-    
-              x2 = number * 0.5F;
-              y  = number;
-              i  = * ( long * ) &y;
-              i  = 0x5f3759df - ( i >> 1 );
-              y  = * ( float * ) &i;
-              y  = y * ( threehalfs - ( x2 * y * y ) );
-    
-              return y;
-            }
+          <code class="lang-c" id="cpp">
 
-            int main() {
-              printf(Q_rsqrt(2.43));
-              //cout << Q_rsqrt(2.43); if in c++
-            }
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-csharp-plain colored"></i> C#</h1>
         <pre class="codeblock">
-          <code class="lang-cs">
-            static float Q_rsqrt(float number)
-            {
-                float x2 = number * 0.5F;
-                float y = number;
-                int i = BitConverter.SingleToInt32Bits(y);
-            
-                i = 0x5f3759df - (i >> 1);
-                y = BitConverter.Int32BitsToSingle(i);
-            
-                y = y * (1.5F - (x2 * y * y));
-            
-                return y;
-            }
-            
-            Console.WriteLine($"{Q_rsqrt(2.43f)}");
+          <code class="lang-cs" id="cs">
+
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-dart-plain colored"></i> Dart</h1>
         <pre class="codeblock">
-          <code class="lang-dart">
-            import 'dart:typed_data';
+          <code class="lang-dart" id="dart">
 
-            double Q_rsqrt(double number) {
-              final threehalfs = 1.5;
-              final x2 = number * 0.5;
-              var y = number;
-            
-              var i = Float32List(1);
-              i.buffer.asFloat32List()[0] = y;
-              var intValue = i.buffer.asUint32List()[0];
-              intValue = 0x5f3759df - (intValue >> 1);
-              i.buffer.asUint32List()[0] = intValue;
-              y = i.buffer.asFloat32List()[0];
-              y = y * (threehalfs - (x2 * y * y)); // first iteration
-              // y = y * (threehalfs - (x2 * y * y)); // increased precision
-            
-              return y;
-            }
-            
-            void main() {
-              print(Q_rsqrt(23.4));
-            }
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-fortran-original colored"></i> Fortran</h1>
         <pre class="codeblock">
-          <code class="lang-fortran">
-          PROGRAM Q_sqrt
-            IMPLICIT NONE
-          
-            REAL(4) :: input
-            INTEGER(4) :: i
-            REAL(4) :: x
-            REAL(4) :: x2
-            REAL(4) :: y
-          
-            PRINT *, 'Number:'
-            READ "(f10.7)", input
-          
-            x2 = input * 0.5
-            y = input
-            i = TRANSFER(y, i)
-            i = 1597463007 - RSHIFT(i,1)
-            x = TRANSFER(i, x)
-          
-            x = x * (1.5 - (x2 * x * x))
-          
-            PRINT "(f10.7)", x
-          END PROGRAM Q_sqrt
+          <code class="lang-fortran" id="fort">
+
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-go-original-wordmark colored"></i> Go</h1>
         <pre class="codeblock">
-          <code class="lang-go">
-            package main
+          <code class="lang-go" id="golan">
 
-            import "unsafe"
-            
-            func Q_rsqrt(number float32) float32 {
-              threehalfs := float32(1.5)
-              x2 := number * 0.5
-              y := number
-          
-              i := *(*int64)(unsafe.Pointer(&y))
-              i = 0x5f3759df - (i >> 1)
-              y = *(*float32)(unsafe.Pointer(&i))
-              y = y * (threehalfs - (x2 * y * y)) // first iteration 
-              // y = y * (threehalfs - (x2 * y * y)) // increased precision
-            
-              return y
-            }
-            
-            func main() {
-              println(Q_rsqrt(123.4))
-            }
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-godot-plain colored"></i> Godot</h1>
         <pre class="codeblock">
-          <code class="lang-gdscript">
-            func Q_rsqrt(number: float):
-              var x: float
-              var y:float = number
-              var i: int
-              var b: PackedByteArray = PackedByteArray()
+          <code class="lang-gdscript" id="gdscript">
 
-              x = number * 0.5
-              b.resize(8)
-              b.encode_float(0, y)
-              i = b.decode_s64(0)
-              i = 0x5f3759df - (i >> 1)
-              b.encode_s64(0, i)
-              y = b.decode_float(0)
-
-              y = y * (1.5 - (x * y * y))
-              y = y * (1.5 - (x * y * y))
-              y = y * (1.5 - (x * y * y))
-
-              return y
-
-            console.log(Q_rsqrt(0.15625))
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-java-plain colored"></i> Java</h1>
         <pre class="codeblock">
-          <code class="lang-java">
-          public class Main {
-            public static void main(String[] args) {
-              float number = 16.0F; 
-              float result = Q_rsqrt(number);
-              System.out.println("Result: " + result);
-            }
-        
-            public static float Q_rsqrt(float number) {
-              int i;
-              float x2, y;
-              final float threeHalfs = 1.5F;
-      
-              x2 = number * 0.5F;
-              y = number;
-              i = Float.floatToIntBits(y); 
-              i = 0x5f3759df - (i >> 1); 
-              y = Float.intBitsToFloat(i);
-
-              y = y * (threeHalfs - (x2 * y * y));
-              y = y * (threeHalfs - (x2 * y * y)); // Second iteration
-
-              return y;
-            }
-          }          
+          <code class="lang-java" id="java">
+       
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-javascript-plain colored"></i> JavaScript</h1>
         <pre class="codeblock">
-          <code class="lang-js">
-            function Q_rsqrt(number) {
-              var x2, y;
-              var i;
-            
-              x2 = number * 0.5;
-              y = number;
-              i = new Int32Array(new Float32Array([y]).buffer)[0];;
-              i = 0x5f3759df - (i >> 1);
-              y = new Float32Array(new Int32Array([i]).buffer)[0];;
-            
-              y = y*(1.5 - (x2 * y * y));
-              y = y*(1.5 - (x2 * y * y));
-            
-              return y;
-            }
-            
-            console.log(Q_rsqrt(25));
+          <code class="lang-js" id="js">
+
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-lua-plain colored"></i> Lua</h1>
         <pre class="codeblock">
-          <code class="lang-lua">
+          <code class="lang-lua" id="lua">
 
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-nim-plain colored"></i> Nim</h1>
         <pre class="codeblock">
-          <code class="lang-nim">
+          <code class="lang-nim" id="nim">
 
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-python-plain colored"></i> Python</h1>
         <pre class="codeblock">
-          <code class="lang-python">
-            import struct
+          <code class="lang-python" id="python">
 
-            def Q_rsqrt(number):
-                threehalfs = 1.5
-                x2 = number * 0.5
-                y = number
-                
-                i = struct.unpack('I', struct.pack('f', y))[0]
-                i = 0x5f3759df - (i >> 1)
-                y = struct.unpack('f', struct.pack('I', i))[0]
-                y = y * (threehalfs - (x2 * y * y)) # first iteration
-                # y = y * (threehalfs - (x2 * y * y)) # increased precision
-                
-                return y
-            
-            print(Q_rsqrt(123.456))
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-rust-original"></i> Rust</h1>
         <pre class="codeblock">
-          <code class="lang-rust">
-            fn inv_sqrt(mut x: f32) -> f32 {
-              let xhalf = 0.5 * x;
-              let mut i = x.to_bits();
-          
-              i = 0x5f37_59df - (i >> 1);
-              x = f32::from_bits(i);
-          
-              x * (1.5 - xhalf * x * x)
-          }
+          <code class="lang-rust" id="rust">
 
-          fn main() {
-            println!("{}", inv_sqrt(3.14));
-          }
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-swift-plain colored"></i> Swift</h1>
         <pre class="codeblock">
-          <code class="lang-swift">
-            import Foundation
+          <code class="lang-swift" id="swift">
 
-            func Q_rsqrt(number: Float32) -> Float32 {
-              var i: UInt32
-              let x2 = number * 0.5
-              var y = number
-            
-              i = UInt32(y.bitPattern)
-              i = 0x5f3759df - (i >> 1)
-              y = Float32(bitPattern: UInt32(i))
-            
-              y = y*(1.5 - (x2 * y * y))
-              y = y*(1.5 - (x2 * y * y))
-              y = y*(1.5 - (x2 * y * y))
-            
-              return y
-            }
-            
-            print(Q_rsqrt(number: 0.15625))
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-visualstudio-plain colored"></i> VbScript</h1>
         <pre class="codeblock">
-          <code class="lang-vb">
+          <code class="lang-vb" id="vbs">
 
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-vitess-plain colored"></i> Vlang</h1>
         <pre class="codeblock">
-          <code class="lang-vlang">
+          <code class="lang-vlang" id="vlan">
 
           </code>
         </pre>
         <br>
         <h1 id="heading"><i class="devicon-zig-original colored"></i> Zig</h1>
         <pre class="codeblock">
-          <code class="lang-zig">
-            const std = @import("std");
+          <code class="lang-zig" id="zig">
 
-            fn Q_rsqrt(number: f32) f32 {
-              const y: f32 = number;
-              const x2: f32 = number * 0.5;
-          
-              var i: i32 = @bitCast(y);
-              i = 0x5f3759df - (i >> 1);
-              var b: f32 = @bitCast(i);
-          
-              b = b * (1.5 - (x2 * b * b));
-              b = b * (1.5 - (x2 * b * b));
-              b = b * (1.5 - (x2 * b * b));
-          
-              return b;
-            }
-            
-            pub fn main() void {
-              std.debug.print("{d}\n", .{Q_rsqrt(0.15625)});
-            }
           </code>
         </pre>
         <br>
