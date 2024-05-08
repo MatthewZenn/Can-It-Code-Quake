@@ -9,11 +9,13 @@ public class Main {
     int i;
     float x2, y;
     final float threeHalfs = 1.5F;
+    
     x2 = number * 0.5F;
     y = number;
     i = Float.floatToIntBits(y); 
     i = 0x5f3759df - (i >> 1); 
-    y = Float.intBitsToFloat(i); 
+    y = Float.intBitsToFloat(i);
+
     y = y * (threeHalfs - (x2 * y * y));
     // Uncomment the following line for the second iteration
     // y = y * (threeHalfs - (x2 * y * y)); // Second iteration

@@ -11,6 +11,7 @@ double Q_rsqrt(double number) {
   intValue = 0x5f3759df - (intValue >> 1);
   i.buffer.asUint32List()[0] = intValue;
   y = i.buffer.asFloat32List()[0];
+  
   y = y * (threehalfs - (x2 * y * y)); // first iteration
   // y = y * (threehalfs - (x2 * y * y)); // increased precision
 

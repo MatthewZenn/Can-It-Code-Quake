@@ -10,6 +10,7 @@ func Q_rsqrt(number float32) float32 {
     i := *(*int64)(unsafe.Pointer(&y))
     i = 0x5f3759df - (i >> 1)
     y = *(*float32)(unsafe.Pointer(&i))
+		
     y = y * (threehalfs - (x2 * y * y)) // first iteration 
     // y = y * (threehalfs - (x2 * y * y)) // increased precision
 
