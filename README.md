@@ -34,6 +34,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - [ ] VBScript
 - [ ] Vlang
 - [x] Zig
+- [ ] More Languages
 
 ## About the Algorithm
 ```c 
