@@ -2,7 +2,7 @@ function Q_rsqrt(number)
   x2 = number * 0.5
   y = number
   
-  i = string.pack(l, y)
+  i = string.pack(j, y)
   i = 0x5f3759df - (i >> 1)
   y = string.unpack(i)
 
