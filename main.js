@@ -43,7 +43,7 @@ codeFetch('Oats/Quake3.js').then((result) => {
 });
 
 codeFetch('Oats/Quake3.lua').then((result) => {
-  document.getElementById('luas').innerHTML = result
+  document.getElementById('lua').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.nim').then((result) => {
