@@ -2,9 +2,9 @@ function Q_rsqrt(number)
   x2 = number * 0.5
   y = number
   
-  i = struct.unpack('>i', struct.pack(y))[0]
+  i = string.pack(l, y)
   i = 0x5f3759df - (i >> 1)
-  y = struct.unpack('>y', struct.pack(i))[0]
+  y = string.unpack(i)
 
   y = y * (1.5 - (x2 * y * y))
   y = y * (1.5 - (x2 * y * y))
