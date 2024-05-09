@@ -11,7 +11,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  2. Add your implementation to the ```Oats``` folder.
  3. Use the ```implementation``` tag in your PR.
  
- Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
+ Passing data between languages or using math functions that weren't possible at the time is against the spirit of the challange. An implementation should try to folow the same process of the algorithm, as close as possible. Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
 
 **Languages so far:**
 - [x] x86 Assembly (needs testing)
@@ -25,6 +25,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - [ ] Haskell
 - [x] Java
 - [x] JavaScript
+- [ ] Julia
 - [ ] Kotlin
 - [ ] Lua
 - [ ] Minecraft (probably not possible)
