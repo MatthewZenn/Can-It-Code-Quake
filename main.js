@@ -46,6 +46,10 @@ codeFetch('Oats/Quake3.nim').then((result) => {
   document.getElementById('nim').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.php').then((result) => {
+  document.getElementById('php').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.py').then((result) => {
   document.getElementById('python').innerHTML = result
 });

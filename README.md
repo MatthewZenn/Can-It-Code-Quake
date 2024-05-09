@@ -28,6 +28,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - [ ] Lua
 - [ ] Minecraft (probably not possible)
 - [ ] Nim
+- [x] PHP
 - [x] Python
 - [x] Swift
 - [x] Rust
