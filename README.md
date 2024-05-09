@@ -14,31 +14,20 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  Passing data between languages or using math functions that weren't possible at the time is against the spirit of the challange. An implementation should try to folow the same process of the algorithm, as close as possible. Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
 
 ## Languages
-| Language  | Status |
-| ---------------------- | ---------------------- |
+| Language  | Status | Language  | Status |
+| ---------------- | ---------------- | ---------------- | ---------------- |
 | x86 Assembly  | needs testing |
-| Bash  | :x:  |
-| C/C++  | :heavy_check_mark:  |
-| C#  | :heavy_check_mark:  |
-| Dart  | :heavy_check_mark:  |
-| Fortran  | :heavy_check_mark:  |
-| Go  | :heavy_check_mark:  |
-| GDScript  | :heavy_check_mark:  |
-| Haskell  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/11  |
-| Java  | :heavy_check_mark:  |
-| JavaScript  | :heavy_check_mark:  |
-| Julia  | :x:  |
-| Kotlin  | :x:  |
-| Lua  | :x:  |
-| Minecraft  | :x:  |
-| Nim  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
-| PHP  | :heavy_check_mark:  |
-| Python  | :heavy_check_mark:  |
-| Rust  | :heavy_check_mark:  |
-| Swift  | :heavy_check_mark:  |
-| VBScript  | :x:  |
-| Vlang  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
-| Zig  | :heavy_check_mark:  |
+| Bash  | :x:  | Kotlin  | :x:  |
+| C/C++  | :heavy_check_mark:  | Lua  | :x:  |
+| C#  | :heavy_check_mark:  | Minecraft  | :x:  |
+| Dart  | :heavy_check_mark:  | Nim  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
+| Fortran  | :heavy_check_mark:  | PHP  | :heavy_check_mark:  |
+| Go  | :heavy_check_mark:  | Python  | :heavy_check_mark:  |
+| GDScript  | :heavy_check_mark:  | Rust  | :heavy_check_mark:  |
+| Haskell  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/11  | Swift  | :heavy_check_mark:  |
+| Java  | :heavy_check_mark:  | VBScript  | :x:  |
+| JavaScript  | :heavy_check_mark:  | Vlang  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
+| Julia  | :x:  | Zig  | :heavy_check_mark:  |
 
 ## About the Algorithm
 ```c 
