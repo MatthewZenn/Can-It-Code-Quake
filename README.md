@@ -13,31 +13,32 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  
  Passing data between languages or using math functions that weren't possible at the time is against the spirit of the challange. An implementation should try to folow the same process of the algorithm, as close as possible. Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
 
-**Languages so far:**
-- [x] x86 Assembly (needs testing)
-- [ ] Bash
-- [x] C/C++
-- [x] C#
-- [x] Dart
-- [x] Fortran
-- [x] Go
-- [x] GDScript
-- [ ] Haskell
-- [x] Java
-- [x] JavaScript
-- [ ] Julia
-- [ ] Kotlin
-- [ ] Lua
-- [ ] Minecraft (probably not possible)
-- [ ] Nim
-- [x] PHP
-- [x] Python
-- [x] Rust
-- [x] Swift
-- [ ] VBScript
-- [ ] Vlang
-- [x] Zig
-- [ ] More Languages
+## Languages
+| Language  | Status |
+| ---------------------- | ---------------------- |
+| x86 Assembly  | needs testing |
+| Bash  | x  |
+| C/C++  | Done  |
+| C#  | Done  |
+| Dart  | Done  |
+| Fortran  | Done  |
+| Go  | Done  |
+| GDScript  | Done  |
+| Haskell  | x  |
+| Java  | Done  |
+| JavaScript  | Done  |
+| Julia  | x  |
+| Kotlin  | x  |
+| Lua  | x  |
+| Minecraft  | x  |
+| Nim  | x  |
+| PHP  | Done  |
+| Python  | Done  |
+| Rust  | Done  |
+| Swift  | Done  |
+| VBScript  | x  |
+| Vlang  | x  |
+| Zig  | Done  |
 
 ## About the Algorithm
 ```c 
