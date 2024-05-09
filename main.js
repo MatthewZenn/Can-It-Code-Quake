@@ -71,3 +71,19 @@ async function codeFetch(path) {
   let data = await response.text();
   return data;
 }
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function colorize() {
+  var theScript = document.createElement("script");
+
+  theScript.setAttribute("type","text/javascript");
+  theScript.setAttribute("src","prism.js");
+  document.getElementsByTagName("head")[0].appendChild(theScript);
+}
+
+sleep(500).then(() => {
+  colorize()
+});
