@@ -32,8 +32,8 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 - [ ] Nim
 - [x] PHP
 - [x] Python
-- [x] Swift
 - [x] Rust
+- [x] Swift
 - [ ] VBScript
 - [ ] Vlang
 - [x] Zig
