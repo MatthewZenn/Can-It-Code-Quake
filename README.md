@@ -31,13 +31,13 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 | Kotlin  | x  |
 | Lua  | x  |
 | Minecraft  | x  |
-| Nim  | x  |
+| Nim  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
 | PHP  | Done  |
 | Python  | Done  |
 | Rust  | Done  |
 | Swift  | Done  |
 | VBScript  | x  |
-| Vlang  | x  |
+| Vlang  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
 | Zig  | Done  |
 
 ## About the Algorithm
