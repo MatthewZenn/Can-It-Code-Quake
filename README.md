@@ -16,13 +16,13 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 ## Languages
 | Language  | Status | Language  | Status |
 | ---------------- | ---------------- | ---------------- | ---------------- |
-| x86 Assembly  | needs testing |
+| x86 Assembly  | needs testing https://github.com/MatthewZenn/Can-It-Code-Quake/issues/1|
 | Bash  | :x:  | Kotlin  | :x:  |
 | C/C++  | :+1:  | Lua  | :x:  |
 | C#  | :+1:  | Minecraft  | :x:  |
 | Dart  | :+1:  | Nim  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
 | Fortran  | :+1:  | PHP  | :+1:  |
-| Go  | :+1:  | Python  | :heavy_check_mark:  |
+| Go  | :+1:  | Python  | :+1:  |
 | GDScript  | :+1:  | Rust  | :+1:  |
 | Haskell  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/11  | Swift  | :+1:  |
 | Java  | :+1:  | VBScript  | :x:  |
