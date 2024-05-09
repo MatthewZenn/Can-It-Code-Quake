@@ -17,28 +17,28 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 | Language  | Status |
 | ---------------------- | ---------------------- |
 | x86 Assembly  | needs testing |
-| Bash  | x  |
-| C/C++  | Done  |
-| C#  | Done  |
-| Dart  | Done  |
-| Fortran  | Done  |
-| Go  | Done  |
-| GDScript  | Done  |
-| Haskell  | x  |
-| Java  | Done  |
-| JavaScript  | Done  |
-| Julia  | x  |
-| Kotlin  | x  |
-| Lua  | x  |
-| Minecraft  | x  |
+| Bash  | :x:  |
+| C/C++  | :heavy_check_mark:  |
+| C#  | :heavy_check_mark:  |
+| Dart  | :heavy_check_mark:  |
+| Fortran  | :heavy_check_mark:  |
+| Go  | :heavy_check_mark:  |
+| GDScript  | :heavy_check_mark:  |
+| Haskell  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/11  |
+| Java  | :heavy_check_mark:  |
+| JavaScript  | :heavy_check_mark:  |
+| Julia  | :x:  |
+| Kotlin  | :x:  |
+| Lua  | :x:  |
+| Minecraft  | :x:  |
 | Nim  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
-| PHP  | Done  |
-| Python  | Done  |
-| Rust  | Done  |
-| Swift  | Done  |
-| VBScript  | x  |
+| PHP  | :heavy_check_mark:  |
+| Python  | :heavy_check_mark:  |
+| Rust  | :heavy_check_mark:  |
+| Swift  | :heavy_check_mark:  |
+| VBScript  | :x:  |
 | Vlang  | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7  |
-| Zig  | Done  |
+| Zig  | :heavy_check_mark:  |
 
 ## About the Algorithm
 ```c 
