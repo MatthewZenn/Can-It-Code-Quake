@@ -1,3 +1,7 @@
+codeFetch('Oats/Quake3.asm').then((result) => {
+  document.getElementById('asm').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.sh').then((result) => {
   document.getElementById('bash').innerHTML = result
 });

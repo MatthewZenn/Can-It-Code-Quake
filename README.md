@@ -14,7 +14,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
 
 **Languages so far:**
-- [ ] x86 Assembly (needs testing)
+- [x] x86 Assembly (needs testing)
 - [ ] Bash
 - [x] C/C++
 - [x] C#
