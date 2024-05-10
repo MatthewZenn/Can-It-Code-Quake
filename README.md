@@ -13,10 +13,12 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  
  Passing data between languages or using math functions that weren't possible at the time is against the spirit of the challange. An implementation should try to folow the same process of the algorithm, as close as possible. Please do not edit the site code at this time. If you would, however, like to try something  more esoteric, and want to showcase a picture of it running on like an arduino or gameboy. Then feel free to add said image to the ```Assets``` folder, when uploading your code.
 
+ If you are implementing an Assembly version, open a PR, instead of commenting it to the issue.
+
 ## Languages
 | Lanuage | Status | Language | Status |
 |----|----|----|----|
-| x86 Assembly | needs testing https://github.com/MatthewZenn/Can-It-Code-Quake/issues/1 | Kotlin | :x: |
+| x86 Assembly | :+1: | Kotlin | :x: |
 | Bash | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 | Lua | :+1: |
 | C/C++ | :+1: | Minecraft | :x: |
 | C# | :+1: | Nim | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
