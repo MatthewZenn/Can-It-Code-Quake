@@ -31,7 +31,7 @@ codeFetch('Oats/Quake3.gd').then((result) => {
 });
 
 codeFetch('Oats/Quake3.hs').then((result) => {
-  document.getElementById('hask').innerHTML = result
+  document.getElementById('haskell').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.java').then((result) => {
