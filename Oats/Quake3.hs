@@ -1,16 +1,18 @@
-Q_rsrt number =
-  let y = number :: [float]
-  let x = number * 0.5 :: [float]
+import GHC.Float
+import Data.Bits
+import Data.Function
 
-  i :: [integer] ptr y
-  a = 0x5f3759df - (i >> 1);
-  c :: [float] ptr a
+q_rsqrt :: Float -> Float
+q_rsqrt x = y
+  where
+    threehalfs = 3/2
+    x' = x * 0.5
+    y = castWord32ToFloat i                       -- evil floating point bit level hacking
+    i = 0x5f3759df - (castFloatToWord32 x .>>. 1) -- what the fuck?
+    f z = z * (threehalfs - (x' * z * z))
+      & f       -- 1st iteration
+      -- & f       -- 2nd iteration, this can be removed
 
-  e = c*(1.5 - (x * c * c));
-  b = e*(1.5 - (x * e * e));
-  
-  return b
+main :: IO ()
+main = print (q_rsqrt 0.15625)
 
-main :: IO()
-main = do
-  print(Q_rsrt 0.15625)
