@@ -26,7 +26,7 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 | Fortran | :+1: | Python | :+1: |
 | Go | :+1: | Rust | :+1: |
 | GDScript | :+1: | Swift | :+1: |
-| Haskell | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/11 | VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 |
+| Haskell | :+1: | VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 |
 | Java | :+1: | Vlang | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
 | JavaScript | :+1: | Zig | :+1: |
 | Julia | :x: |  |  |
