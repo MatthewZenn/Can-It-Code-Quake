@@ -50,6 +50,10 @@ codeFetch('Oats/Quake3.nim').then((result) => {
   document.getElementById('nimb').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.pl').then((result) => {
+  document.getElementById('perl').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.php').then((result) => {
   document.getElementById('php').innerHTML = result
 });
@@ -60,6 +64,10 @@ codeFetch('Oats/Quake3.py').then((result) => {
 
 codeFetch('Oats/Quake3.swift').then((result) => {
   document.getElementById('swift').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.rb').then((result) => {
+  document.getElementById('ruby').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.rs').then((result) => {

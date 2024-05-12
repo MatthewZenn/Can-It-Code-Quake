@@ -28,11 +28,12 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
 | Julia | :x: | Kotlin | :x: |
 | Lisp | :x: | Lua | :+1: |
 | Minecraft | :x: | Nim | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
-| Perl | :x: | PHP | :+1: |
+| Perl | :+1: | PHP | :+1: |
 | Python | :+1: | R | :x: |
-| Rust | :+1: | Scala | :x: |
-| Swift | :+1: | VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 |
-| Vlang | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 | Zig | :+1: |
+| Ruby | :+1: | Rust | :+1: |
+| Scala | :x: | Swift | :+1: |
+| VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 | Vlang | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
+| Zig | :+1: |  |  |
 
 ## About the Algorithm
 ```c 
