@@ -16,24 +16,20 @@ Let's find out how many languages can implement the Fast Inverse Square Root Alg
  If you are implementing an Assembly version, open a PR, instead of commenting it to the issue.
 
 ## Languages
-| Language | Status | Language | Status |
-|----|----|----|----|
-| x86 Assembly | :+1: | Bash | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 |
-| Basic | :x: | C/C++ | :+1: |
-| C# | :+1: | COBOL | :x: |
-| Dart | :+1: | Fortran | :+1: |
-| F# | :x: | Go | :+1: |
-| GDScript | :+1: | Haskell | :+1: |
-| Java | :+1: | JavaScript | :+1: |
-| Julia | :x: | Kotlin | :x: |
-| Lisp | :x: | Lua | :+1: |
-| Minecraft | :x: | Nim | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
-| Perl | :+1: | PHP | :+1: |
-| Python | :+1: | R | :x: |
-| Ruby | :+1: | Rust | :+1: |
-| Scala | :x: | Swift | :+1: |
-| VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 | Vlang | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 |
-| Zig | :+1: |  |  |
+| Language | Status | Language | Status | Language | Status |
+|----|----|----|----|----|----|
+| x86 Assembly | :+1: | Bash | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 | Basic | :x: |
+| C/C++ | :+1: | C# | :+1: | Carbon | :x: |
+| COBOL | :x: | CoffeeScript | :x: | Dart | :+1: |
+| Fortran | :+1: | F# | :x: | Go | :+1: |
+| GDScript | :+1: | Haskell | :+1: | Java | :+1: |
+| JavaScript | :+1: | Julia | :x: | Kotlin | :x: |
+| Lisp | :x: | Lua | :+1: | Minecraft | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/16 |
+| Mojo | :x: | Nim | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 | Perl | :+1: |
+| PHP | :+1: | Python | :+1: | R | :x: |
+| Ruby | :+1: | Rust | :+1: | Scala | :x: |
+| Solidity | :x: | Swift | :+1: | VBScript | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8 |
+| Vlang | https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7 | Zig | :+1: |  |  |
 
 ## About the Algorithm
 ```c 
