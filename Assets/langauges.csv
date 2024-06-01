@@ -3,7 +3,9 @@ Bash,https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8
 Basic,:x:
 C/C++,:+1:
 C#,:+1:
+Carbon,:x:
 COBOL,:x:
+CoffeeScript,:x:
 Dart,:+1:
 Fortran,:+1:
 F#,:x:
@@ -16,7 +18,8 @@ Julia,:x:
 Kotlin,:x:
 Lisp,:x:
 Lua,:+1:
-Minecraft,:x:
+Minecraft,https://github.com/MatthewZenn/Can-It-Code-Quake/issues/16
+Mojo,:x:
 Nim,https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7
 Perl,:+1:
 PHP,:+1:
@@ -25,6 +28,7 @@ R,:x:
 Ruby,:+1:
 Rust,:+1:
 Scala,:x:
+Solidity,:x:
 Swift,:+1:
 VBScript,https://github.com/MatthewZenn/Can-It-Code-Quake/issues/8
 Vlang,https://github.com/MatthewZenn/Can-It-Code-Quake/issues/7
