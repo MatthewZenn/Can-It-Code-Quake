@@ -10,12 +10,24 @@ codeFetch('Oats/Quake3.c').then((result) => {
   document.getElementById('cpp').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.carbon').then((result) => {
+  document.getElementById('carbon').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.coffee').then((result) => {
+  document.getElementById('coffee').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.cs').then((result) => {
   document.getElementById('cs').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.dart').then((result) => {
   document.getElementById('dart').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.el').then((result) => {
+  document.getElementById('elixir').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.f95').then((result) => {
@@ -38,32 +50,44 @@ codeFetch('Oats/Quake3.java').then((result) => {
   document.getElementById('java').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.jl').then((result) => {
+  document.getElementById('julia').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.js').then((result) => {
   document.getElementById('js').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.lisp').then((result) => {
+  document.getElementById('lisp').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.lua').then((result) => {
   document.getElementById('lua').innerHTML = result
 });
 
-codeFetch('Oats/Quake3.nim').then((result) => {
-  document.getElementById('nimb').innerHTML = result
+codeFetch('Oats/Quake3.mojo').then((result) => {
+  document.getElementById('mojo').innerHTML = result
 });
 
-codeFetch('Oats/Quake3.pl').then((result) => {
-  document.getElementById('perl').innerHTML = result
+codeFetch('Oats/Quake3.nim').then((result) => {
+  document.getElementById('nimb').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.php').then((result) => {
   document.getElementById('php').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.pl').then((result) => {
+  document.getElementById('perl').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.py').then((result) => {
   document.getElementById('python').innerHTML = result
 });
 
-codeFetch('Oats/Quake3.swift').then((result) => {
-  document.getElementById('swift').innerHTML = result
+codeFetch('Oats/Quake3.r').then((result) => {
+  document.getElementById('rlang').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.rb').then((result) => {
@@ -74,12 +98,24 @@ codeFetch('Oats/Quake3.rs').then((result) => {
   document.getElementById('rust').innerHTML = result
 });
 
-codeFetch('Oats/Quake3.vbs').then((result) => {
-  document.getElementById('vobs').innerHTML = result
+codeFetch('Oats/Quake3.sc').then((result) => {
+  document.getElementById('scala').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.sol').then((result) => {
+  document.getElementById('solidity').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.swift').then((result) => {
+  document.getElementById('swift').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.v').then((result) => {
   document.getElementById('vland').innerHTML = result
+});
+
+codeFetch('Oats/Quake3.vbs').then((result) => {
+  document.getElementById('vobs').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.zig').then((result) => {
