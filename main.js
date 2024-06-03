@@ -1,4 +1,4 @@
-codeFetch('Oats/Quake3.asm').then((result) => {
+codeFetch('Oats/Quake3_x86.asm').then((result) => {
   document.getElementById('asm').innerHTML = result
 });
 
