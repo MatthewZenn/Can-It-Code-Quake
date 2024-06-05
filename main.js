@@ -34,6 +34,10 @@ codeFetch('Oats/Quake3.f95').then((result) => {
   document.getElementById('fort').innerHTML = result
 });
 
+codeFetch('Oats/Quake3.fs').then((result) => {
+  document.getElementById('fsharp').innerHTML = result
+});
+
 codeFetch('Oats/Quake3.go').then((result) => {
   document.getElementById('golan').innerHTML = result
 });
@@ -51,7 +55,7 @@ codeFetch('Oats/Quake3.java').then((result) => {
 });
 
 codeFetch('Oats/Quake3.jl').then((result) => {
-  document.getElementById('julia').innerHTML = result
+  document.getElementById('jl').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.js').then((result) => {
@@ -71,7 +75,7 @@ codeFetch('Oats/Quake3.mojo').then((result) => {
 });
 
 codeFetch('Oats/Quake3.nim').then((result) => {
-  document.getElementById('nimb').innerHTML = result
+  document.getElementById('nim').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.php').then((result) => {
@@ -111,7 +115,7 @@ codeFetch('Oats/Quake3.swift').then((result) => {
 });
 
 codeFetch('Oats/Quake3.v').then((result) => {
-  document.getElementById('vland').innerHTML = result
+  document.getElementById('vlan').innerHTML = result
 });
 
 codeFetch('Oats/Quake3.vbs').then((result) => {
